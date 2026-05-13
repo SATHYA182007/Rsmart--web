@@ -1,0 +1,23 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  position: relative;
+}
+
+.app-container::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/IT-park-1.jpg') center/cover no-repeat fixed;
+  opacity: 0.04;
+  z-index: 0;
+  pointer-events: none;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}

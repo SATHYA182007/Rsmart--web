@@ -1,0 +1,111 @@
+.wrs-section {
+  background: var(--light);
+  position: relative;
+  overflow: hidden;
+}
+
+.wrs-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.wrs-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.wrs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wrs-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  transition: var(--transition);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.wrs-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.wrs-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366F1, #8B5CF6);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.wrs-card:hover::after {
+  opacity: 1;
+}
+
+.wrs-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+  color: #6366F1;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.wrs-card:hover .wrs-icon-wrap {
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: white;
+  transform: scale(1.05);
+}
+
+.wrs-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.wrs-subtitle {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #6366F1;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.wrs-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .wrs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .wrs-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,102 @@
+.main-footer {
+  background: var(--text-dark);
+  color: var(--white);
+  padding: 60px 0 30px;
+}
+
+.ft-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.ft-brand { flex: 1; max-width: 340px; }
+
+.ft-logo {
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #046BD2, #7C3AED, #F59E0B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ft-mission {
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 20px;
+}
+
+.ft-social { display: flex; gap: 10px; }
+
+.ft-social a {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.35);
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition);
+}
+
+.ft-social a:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.ft-links {
+  display: flex; gap: 50px;
+  flex: 2; justify-content: flex-end;
+}
+
+.ft-col h3 {
+  font-family: var(--font-sans);
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+  color: rgba(255,255,255,0.35);
+}
+
+.ft-col ul li { margin-bottom: 8px; }
+
+.ft-col ul li a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+  transition: var(--transition);
+}
+
+.ft-col ul li a:hover { color: var(--white); padding-left: 4px; }
+
+.ft-contact li {
+  display: flex; gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+
+.ft-contact svg { flex-shrink: 0; color: rgba(255,255,255,0.2); margin-top: 3px; }
+
+.ft-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: rgba(255,255,255,0.15);
+}
+
+.ft-legal { display: flex; gap: 16px; }
+.ft-legal a:hover { color: rgba(255,255,255,0.4); }
+
+@media (max-width: 991px) {
+  .ft-top { flex-direction: column; gap: 30px; }
+  .ft-links { justify-content: flex-start; flex-wrap: wrap; gap: 30px; }
+  .ft-brand { max-width: 100%; }
+}
+@media (max-width: 600px) { .ft-bottom { flex-direction: column; gap: 12px; text-align: center; } }
