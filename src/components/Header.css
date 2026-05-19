@@ -92,59 +92,10 @@
   z-index: 1;
 }
 
-.rgu-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #6366F1, #8B5CF6, #A855F7);
-  box-shadow: 0 3px 12px rgba(99,102,241,0.35);
-}
-
-.rgu-logo-text {
-  font-family: var(--font-sans);
-  font-size: 15px;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: -0.3px;
-}
-
-.rgu-text-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.rgu-title {
-  font-family: var(--font-sans);
-  font-size: 14px;
-  font-weight: 800;
-  color: #0F172A;
-  line-height: 1.15;
-  letter-spacing: -0.3px;
-}
-
-.rgu-badges {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.naac-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  font-size: 8px;
-  font-weight: 700;
-  color: #D97706;
-  background: rgba(245,158,11,0.12);
-  padding: 2px 7px;
-  border-radius: 20px;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  border: 1px solid rgba(245,158,11,0.15);
+.raise-smart-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* --- CENTER: Navigation --- */
@@ -273,7 +224,6 @@
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .nav-link { font-size: 12px; padding: 6px 10px; }
-  .rgu-title { font-size: 13px; }
 }
 
 @media (max-width: 991px) {
@@ -289,9 +239,6 @@
     padding: 6px 10px 6px 14px;
     border-radius: 60px;
   }
-
-  .rgu-title { font-size: 12px; }
-  .naac-badge { font-size: 7px; padding: 1px 5px; }
 
   .menu-toggle { display: flex; }
 
@@ -351,9 +298,6 @@
 @media (max-width: 480px) {
   .main-header { padding: 12px 12px 0; }
   .navbar-pill { padding: 5px 8px 5px 10px; }
-  .rgu-logo { width: 34px; height: 34px; }
-  .rgu-logo-text { font-size: 12px; }
-  .rgu-title { display: none; }
-  .rgu-badges { display: none; }
+  .raise-smart-logo { height: 42px; }
   .btn-apply { font-size: 11px; padding: 7px 14px; gap: 6px; }
 }

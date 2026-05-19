@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Menu, X, ArrowRight, GraduationCap } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import './Header.css';
@@ -23,18 +23,7 @@ const Header: React.FC = () => {
     <header className={`main-header ${isScrolled ? 'header-scrolled' : ''}`} ref={headerRef}>
       <div className="navbar-pill">
         <a href="/" className="nav-left">
-          <div className="rgu-logo">
-            <span className="rgu-logo-text">RGU</span>
-          </div>
-          <div className="rgu-text-group">
-            <span className="rgu-title">Rathinam Global University</span>
-            <div className="rgu-badges">
-              <span className="naac-badge">
-                <GraduationCap size={10} />
-                NAAC A++ Accredited
-              </span>
-            </div>
-          </div>
+          <img src="/logo.png" alt="Raise Smart School of Technology" className="raise-smart-logo" />
         </a>
 
         <nav className={`nav-center ${mobileMenuOpen ? 'nav-mobile-open' : ''}`}>
