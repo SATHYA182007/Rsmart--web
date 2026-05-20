@@ -26,14 +26,6 @@ const Footer: React.FC = () => (
             </ul>
           </div>
           <div className="ft-col">
-            <h3>Admissions</h3>
-            <ul>
-              <li><a href="#contact">Apply Now</a></li>
-              <li><a href="#campus">Scholarships</a></li>
-              <li><a href="#campus">Campus Life</a></li>
-            </ul>
-          </div>
-          <div className="ft-col">
             <h3>Contact</h3>
             <ul className="ft-contact">
               <li><MapPin size={13} /><span>Rathinam IT Park, Eachanari, Coimbatore – 641021</span></li>
