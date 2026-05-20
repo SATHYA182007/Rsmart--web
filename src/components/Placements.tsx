@@ -69,7 +69,7 @@ const students: Student[] = [
     image: '/placements/clean_devi_sri.png',
     logo: '/placements/logo_devi_sri.png',
     story: 'Joined the core infrastructure protection team at Palo Alto Networks, implementing machine-learning threat models for enterprise low-latency traffic security.',
-    linkedin: 'https://www.linkedin.com/school/rathinamcollege/',
+    linkedin: 'https://www.linkedin.com/in/devi-sri-074508274/',
   },
   {
     name: 'Kanishka R',
@@ -134,7 +134,7 @@ const students: Student[] = [
     image: '/placements/clean_pradeep.png',
     logo: '/placements/logo_pradeep.png',
     story: 'Rebuilt payment gateway pipelines with high-concurrency architecture, reducing transaction failures by over 80%.',
-    linkedin: 'https://www.linkedin.com/school/rathinamcollege/',
+    linkedin: 'https://www.linkedin.com/in/pradeep-j-linked-in/',
   },
   {
     name: 'Janani K',
