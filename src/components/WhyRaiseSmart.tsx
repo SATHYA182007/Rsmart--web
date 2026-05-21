@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Building2, Code, Globe, Cpu, Award, Briefcase, MapPin, Users, Monitor, ChevronRight } from 'lucide-react';
+import { Building2, Code, Globe, Cpu, Award, Briefcase, MapPin, Users, Monitor } from 'lucide-react';
 import './WhyRaiseSmart.css';
 
 gsap.registerPlugin(ScrollTrigger);
