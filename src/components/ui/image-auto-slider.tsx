@@ -1,5 +1,4 @@
-import React from 'react';
-import { Briefcase, Building2, GraduationCap, MapPin, BadgeCheck, Sparkles } from 'lucide-react';
+import { Briefcase, Building2, GraduationCap, BadgeCheck, Sparkles } from 'lucide-react';
 
 const placements = [
   {

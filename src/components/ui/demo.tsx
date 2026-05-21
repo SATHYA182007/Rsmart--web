@@ -1,4 +1,3 @@
-import React from 'react';
 import { ImageAutoSlider } from './image-auto-slider';
 
 export default function Demo() {
