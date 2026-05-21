@@ -24,6 +24,7 @@ const Header: React.FC = () => {
       <div className="navbar-pill">
         <a href="/" className="nav-left">
           <img src="/logo.png" alt="Raise Smart School of Technology" className="raise-smart-logo" />
+          <img src="/rsmart-logo.png" alt="Raise Smart School of Technology Logo" className="rsmart-logo-img" />
         </a>
 
         <nav className={`nav-center ${mobileMenuOpen ? 'nav-mobile-open' : ''}`}>
@@ -31,10 +32,10 @@ const Header: React.FC = () => {
             <X size={20} />
           </button>
           <ul className="nav-list">
-            <li><a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About us</a></li>
-            <li><a href="#admissions" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Admissions</a></li>
+            <li><a href="#why-raise-smart" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Why Raise Smart</a></li>
             <li><a href="#programmes" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Academics</a></li>
             <li><a href="#placements" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Placements</a></li>
+            <li><a href="#s4s-community" className="nav-link" onClick={() => setMobileMenuOpen(false)}>S4S Community</a></li>
             <li><a href="#campus" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Campus Life</a></li>
           </ul>
         </nav>

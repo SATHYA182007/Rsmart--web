@@ -109,7 +109,7 @@
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -117,11 +117,11 @@
 
 .nav-link {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #1E293B;
   text-decoration: none;
-  padding: 7px 14px;
+  padding: 9px 20px;
   border-radius: 40px;
   transition: all 0.25s ease;
   position: relative;
@@ -299,5 +299,6 @@
   .main-header { padding: 12px 12px 0; }
   .navbar-pill { padding: 5px 8px 5px 10px; }
   .raise-smart-logo { height: 42px; }
+  .rsmart-logo-img { height: 32px; }
   .btn-apply { font-size: 11px; padding: 7px 14px; gap: 6px; }
 }

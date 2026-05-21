@@ -20,7 +20,9 @@ const Comparison: React.FC = () => {
 
   useGSAP(() => {
     gsap.fromTo('.wh-header', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: sectionRef.current, start: 'top 80%' } });
-    gsap.fromTo('.cmp-row', { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, stagger: 0.1, ease: "power2.out", scrollTrigger: { trigger: '.cmp-table', start: 'top 85%' } });
+    gsap.fromTo('.cmp-aspect-cell', { opacity: 0, x: -15 }, { opacity: 1, x: 0, duration: 0.4, stagger: 0.08, ease: "power2.out", scrollTrigger: { trigger: '.cmp-grid', start: 'top 85%' } });
+    gsap.fromTo('.cmp-rsmart-cell', { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08, ease: "power2.out", scrollTrigger: { trigger: '.cmp-grid', start: 'top 85%' } });
+    gsap.fromTo('.cmp-normal-cell', { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08, ease: "power2.out", scrollTrigger: { trigger: '.cmp-grid', start: 'top 85%' } });
   }, { scope: sectionRef });
 
   return (
@@ -31,19 +33,43 @@ const Comparison: React.FC = () => {
           <p className="section-desc">See how Raise Smart School transforms education compared to traditional college study.</p>
         </div>
 
-        <div className="cmp-table">
-          <div className="cmp-headers">
-            <div className="cmp-aspect-head">Aspect</div>
-            <div className="cmp-label cmp-normal-head"><X size={14} /> Normal College</div>
-            <div className="cmp-label cmp-rsmart-head"><Check size={14} /> Raise Smart School</div>
-          </div>
-          {comparisons.map((row, i) => (
-            <div key={i} className="cmp-row">
-              <div className="cmp-aspect">{row.aspect}</div>
-              <div className="cmp-cell cmp-normal">{row.normal}</div>
-              <div className="cmp-cell cmp-rsmart">{row.rsmart}</div>
+        <div className="cmp-table-wrapper">
+          <div className="cmp-grid">
+            {/* Header row */}
+            <div className="cmp-row cmp-row--header">
+              <div className="cmp-aspect-cell cmp-aspect-cell--empty"></div>
+              <div className="cmp-rsmart-cell cmp-rsmart-cell--header">
+                <span className="cmp-card-tag">Advantage</span>
+                <h4 className="cmp-card-title">Raise Smart School</h4>
+              </div>
+              <div className="cmp-normal-cell cmp-normal-cell--header">
+                <span className="cmp-card-tag">Traditional Education</span>
+                <h4 className="cmp-card-title">Normal College</h4>
+              </div>
             </div>
-          ))}
+
+            {/* Data rows */}
+            {comparisons.map((row, i) => (
+              <div key={i} className="cmp-row">
+                <div className="cmp-aspect-cell">
+                  <span className="cmp-aspect-bullet"></span>
+                  {row.aspect}
+                </div>
+                <div className="cmp-rsmart-cell">
+                  <div className="cmp-icon-wrapper cmp-icon-wrapper--check">
+                    <Check size={12} strokeWidth={3} />
+                  </div>
+                  <span className="cmp-text">{row.rsmart}</span>
+                </div>
+                <div className="cmp-normal-cell">
+                  <div className="cmp-icon-wrapper cmp-icon-wrapper--x">
+                    <X size={12} strokeWidth={3} />
+                  </div>
+                  <span className="cmp-text">{row.normal}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

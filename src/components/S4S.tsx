@@ -13,7 +13,7 @@ const slides = [
   'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/50b318d4-b623-4ce4-afe4-cfee12eafaa8.jpg',
   'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/ab4a6008-48e1-4880-8f5e-29233545bdc9.jpg',
   'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/5961d84b-8606-442f-b9bc-7416763f0ea6.jpg',
-  'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/06.jpg',
+  '/talkonauts-vishva.jpeg',
 ];
 
 const benefits = [
@@ -43,7 +43,7 @@ const S4S: React.FC = () => {
   }, { scope: sectionRef });
 
   return (
-    <section className="s4s-section section-padding" id="s4s" ref={sectionRef}>
+    <section className="s4s-section section-padding" id="s4s-community" ref={sectionRef}>
       <div className="container">
         <div className="s4s-header">
           <h2 className="section-title">Students for <span className="text-gradient">Students</span> <span className="s4s-brackets">(S4S)</span></h2>
@@ -98,17 +98,17 @@ const S4S: React.FC = () => {
           </div>
           <div className="s4s-wing">
             <div className="s4s-wing-content">
-              <h3>TALKONAUTS <span className="wing-sub">— Communication and Leadership Development</span></h3>
-              <p className="wing-objective">Objective: To build confident communicators and responsible student leaders. Talkonauts focuses on:</p>
+              <h3>AITED <span className="wing-sub">— AI Tools Exploration & Development</span></h3>
+              <p className="wing-objective">Objective: To empower students with hands-on experience in Artificial Intelligence, exploring modern tools and emerging technological trends.</p>
               <ul>
-                <li>Public speaking</li>
-                <li>Peer discussions</li>
-                <li>Leadership activities</li>
-                <li>Confidence-building sessions</li>
-                <li>Team collaboration</li>
+                <li>AI tool experimentation</li>
+                <li>Prompt engineering workshops</li>
+                <li>Emerging tech trends</li>
+                <li>Machine learning basics</li>
+                <li>AI-driven problem solving</li>
               </ul>
             </div>
-            <img src="https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/Talkonauts-logo-RSMART-Intellect-1-1-1024x1024.png" alt="TALKONAUTS Wing" className="s4s-wing-img" loading="lazy" />
+            <img src="/ai_skills_laboratory.png" alt="AITED Wing" className="s4s-wing-img" style={{ objectFit: 'contain', padding: '40px', backgroundColor: '#050505' }} loading="lazy" />
           </div>
         </div>
 
