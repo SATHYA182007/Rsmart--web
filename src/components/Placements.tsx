@@ -180,7 +180,7 @@ const Placements: React.FC = () => {
         <div className="pl-grid-wrapper">
           <div className="pl-grid-bg-text">PLACEMENTS</div>
           <div className="pl-grid">
-            {students.map((s, i) => (
+            {[...students, ...students].map((s, i) => (
               <div
                 key={i}
                 className={`pl-card${s.isHero ? ' pl-card--hero' : ''}`}

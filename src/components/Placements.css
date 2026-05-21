@@ -105,13 +105,24 @@
   z-index: 0;
 }
 
-/* ---- Grid ---- */
+/* ---- Grid (Now Marquee) ---- */
 .pl-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 18px;
   position: relative;
   z-index: 1;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+  padding: 10px 0;
+}
+
+.pl-grid:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 9px)); }
 }
 
 /* ---- Card ---- */
@@ -125,6 +136,8 @@
   transition: transform .4s cubic-bezier(.25,1,.5,1), box-shadow .4s ease, border-color .3s ease;
   display: flex;
   flex-direction: column;
+  width: 290px;
+  flex-shrink: 0;
 }
 
 .pl-card:hover {
@@ -484,19 +497,12 @@
    RESPONSIVE
    ================================================================ */
 @media (max-width: 1200px) {
-  .pl-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  /* removed grid */
 }
 
 @media (max-width: 900px) {
   .pl-stats {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .pl-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
   }
 
   .pl-grid-wrapper {
@@ -526,9 +532,8 @@
     gap: 12px;
   }
 
-  .pl-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  .pl-card {
+    width: 250px;
   }
 
   .pl-card-photo {
