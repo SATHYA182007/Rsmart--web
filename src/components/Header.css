@@ -98,6 +98,15 @@
   object-fit: contain;
 }
 
+.rsmart-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin: -8px 0 -8px -20px;
+  padding-left: 10px;
+  border-radius: 100px 0 0 100px;
+}
+
 /* --- CENTER: Navigation --- */
 .nav-center {
   display: flex;

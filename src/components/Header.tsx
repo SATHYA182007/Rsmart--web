@@ -23,8 +23,7 @@ const Header: React.FC = () => {
     <header className={`main-header ${isScrolled ? 'header-scrolled' : ''}`} ref={headerRef}>
       <div className="navbar-pill">
         <a href="/" className="nav-left">
-          <img src="/logo.png" alt="Raise Smart School of Technology" className="raise-smart-logo" />
-          <img src="/rsmart-logo.png" alt="Raise Smart School of Technology Logo" className="rsmart-logo-img" />
+          <img src="/rsmart-logo-transparent.png" alt="Raise Smart School of Technology Logo" className="rsmart-logo-img" />
         </a>
 
         <nav className={`nav-center ${mobileMenuOpen ? 'nav-mobile-open' : ''}`}>

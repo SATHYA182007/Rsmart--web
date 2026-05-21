@@ -10,7 +10,6 @@ import Infrastructures from './components/Infrastructures';
 import Footer from './components/Footer';
 import AnimatedStats from './components/AnimatedStats';
 import CompanyMarquee from './components/CompanyMarquee';
-import WhyRaiseSmart from './components/WhyRaiseSmart';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
