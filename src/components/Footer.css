@@ -14,13 +14,12 @@
 .ft-brand { flex: 1; max-width: 340px; }
 
 .ft-logo {
-  font-family: var(--font-sans);
-  font-size: 2rem;
-  margin-bottom: 16px;
-  background: linear-gradient(135deg, #046BD2, #7C3AED, #F59E0B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+  display: block;
+  mix-blend-mode: screen;
 }
 
 .ft-mission {

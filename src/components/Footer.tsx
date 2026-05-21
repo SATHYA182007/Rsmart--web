@@ -7,7 +7,7 @@ const Footer: React.FC = () => (
     <div className="container">
       <div className="ft-top">
         <div className="ft-brand">
-          <h2 className="ft-logo">RAISE SMART</h2>
+          <img src="/rsmart-logo.jpeg" alt="Raise Smart School of Technology Logo" className="ft-logo" />
           <p className="ft-mission">Dedicated to delivering excellence in technology education and bridging the gap between academic learning and industry requirements.</p>
           <div className="ft-social">
             {[Globe, MessageCircle, Camera, Briefcase].map((Icon, i) => (
